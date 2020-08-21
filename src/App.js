@@ -82,11 +82,11 @@ function Product(props){
   )
 }
 function Person(props){
-
+  const {name,job} = props.person;
   return(
-    <div style= {{border: '2px solid gold', margin:'10px', width:'400px'}}>
-      <h3>{props.name}</h3>
-      <p>{props.job}</p>
+    <div style= {{border: '2px solid gold', margin:'10px', width:'400px',height:'150px'}}>
+      <h3>{name}</h3>
+      <p>{job}</p>
     </div>
   )
 }
